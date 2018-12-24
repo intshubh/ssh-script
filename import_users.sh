@@ -217,11 +217,9 @@ function delete_local_user() {
 
 function clean_iam_username() {
     local clean_username="${1}"
-    clean_username=${clean_username//"+"/".plus."}
-    clean_username=${clean_username//"="/".equal."}
-    clean_username=${clean_username//","/".comma."}
-    clean_username=${clean_username//"@"/".at."}
+    clean_username=${clean_username%@*}
     echo "${clean_username}"
+
 }
 
 function sync_accounts() {
