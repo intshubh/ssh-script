@@ -106,7 +106,7 @@ cd "$tmpdir"
 
 git clone -b "$RELEASE" https://github.com/intshubh/ssh-script.git
 
-cd "$tmpdir/aws-ec2-ssh"
+cd "$tmpdir/ssh-script"
 
 cp authorized_keys_command.sh $AUTHORIZED_KEYS_COMMAND_FILE
 cp import_users.sh $IMPORT_USERS_SCRIPT_FILE
